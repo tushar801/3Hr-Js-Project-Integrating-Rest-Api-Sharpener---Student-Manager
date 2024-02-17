@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Manager</title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<h1 style="text-align:center; font-weight:bold;">Student Manager</h1>
+<p style="text-align:center; font-weight:bold;">All Students: <span id="studentCount">0</span></p>
+<div id="studentDetails" style="margin-left:20%;">
+  <h2 style="font-weight:bold;">Add Student:</h2>
+  <input type="text" id="nameInput" placeholder="Name"><br><br>
+  <input type="text" id="mobileInput" placeholder="Mobile"><br><br>
+  <input type="text" id="addressInput" placeholder="Address"><br><br>
+  <button onclick="addOrUpdateStudent()" id="addButton">Add</button>
+</div>
+<div id="allStudents" style="margin-left:20%;">
+  <h2 style="font-weight:bold;">All Students:</h2>
+  <ul id="studentsList"></ul>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
